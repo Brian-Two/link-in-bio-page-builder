@@ -1,6 +1,6 @@
 ---
-name: create-prd
-description: Generate a Product Requirements Document from conversation context. Use when the user wants a PRD, product spec, or requirements document written to a file.
+description: Create a Product Requirements Document from conversation
+argument-hint: [output-filename]
 ---
 
 # Create PRD: Generate Product Requirements Document
@@ -11,7 +11,7 @@ Generate a comprehensive Product Requirements Document (PRD) based on the curren
 
 ## Output File
 
-Write the PRD to the path specified by the user (default: `PRD.md`).
+Write the PRD to: `$ARGUMENTS` (default: `PRD.md`)
 
 ## PRD Structure
 
@@ -148,4 +148,4 @@ After creating the PRD:
 - Adapt section depth based on available details
 - For highly technical products, emphasize architecture and technical stack
 - For user-facing products, emphasize user stories and experience
-- This skill contains the complete PRD template structure - no external references needed
+- This command contains the complete PRD template structure - no external references needed
